@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VORTEX ROLEPLAY | RULES EXAM</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;900&family=Orbitron:wght@600;800&display=swap');
+:root{
+--bg:#080707;--panel:#130d0e;--red:#850e1b;
+--red2:#b01b2c;--text:#f5eeee;--muted:#a18f91;
+--border:#40191e;--green:#42c995;
+}
+*{box-sizing:border-box}
+body{
+margin:0;background:var(--bg);color:var(--text);
+font-family:Cairo,sans-serif;min-height:100vh;
+background-image:radial-gradient(ellipse at 10% 0%,#480d1760,transparent 45%),
+radial-gradient(ellipse at 95% 90%,#310b1160,transparent 40%);
+}
+body:before{
+content:"";position:fixed;inset:0;pointer-events:none;opacity:.15;
+background-image:linear-gradient(#ffffff0b 1px,transparent 1px),
+linear-gradient(90deg,#ffffff0b 1px,transparent 1px);
+background-size:55px 55px;
+}
+header{
+height:78px;padding:0 6%;display:flex;align-items:center;
+justify-content:space-between;border-bottom:1px solid #ffffff16;
+position:relative
+}
+.logo{font:800 22px Orbitron;color:#bd2636;letter-spacing:3px}
+.logo small{display:block;font:9px Orbitron;color:#817174;letter-spacing:3px;margin-top:5px}
+.online{font-size:10px;color:#e18b92;letter-spacing:1px}
+.container{width:min(900px,92%);margin:55px auto;position:relative}
+.hero{text-align:center;margin-bottom:35px}
+.eyebrow{font:11px Orbitron;letter-spacing:4px;color:#bc2637}
+h1{font-size:clamp(32px,6vw,54px);margin:15px 0;font-weight:900}
+h1 span{color:#a81728}
+.hero p{color:var(--muted);line-height:2;font-size:13px}
+.panel{
+background:linear-gradient(145deg,#191011,#100b0c);
+border:1px solid var(--border);padding:30px;
+box-shadow:0 20px 65px #0009;position:relative
+}
+.panel:before{
+content:"";position:absolute;top:-1px;right:25px;
+width:85px;height:2px;background:#a71929
+}
+.label{font:11px Orbitron;color:#c34b56;letter-spacing:2px}
+h2{font-size:23px;margin:15px 0}
+.description{color:var(--muted);font-size:13px;line-height:2}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:25px 0}
+.stat{background:#211416;border:1px solid #492126;padding:15px;text-align:center}
+.stat b{display:block;font:800 22px Orbitron;color:#d04a56}
+.stat small{color:var(--muted);font-size:10px}
+button{font-family:inherit;cursor:pointer}
+.primary{
+border:1px solid #a52a37;
+background:linear-gradient(100deg,#680b16,#a71b2b);
+color:white;padding:14px 30px;font-weight:800;transition:.2s
+}
+.primary:hover{filter:brightness(1.2);transform:translateY(-2px)}
+.hidden{display:none!important}
+.progress-info{display:flex;justify-content:space-between;color:var(--muted);font-size:11px}
+.progress{height:4px;background:#302023;margin:15px 0 25px}
+.bar{height:100%;background:linear-gradient(90deg,#650b15,#cf3948);width:0%;transition:.3s}
+.category{color:#c34b56;font:11px Orbitron;letter-spacing:2px}
+.question{font-size:21px;font-weight:800;line-height:1.9;margin:20px 0 25px}
+.option{
+width:100%;padding:15px;margin:8px 0;
+background:#1a1214;border:1px solid #3b2427;
+color:#eee;font-family:inherit;font-size:13px;
+text-align:right;transition:.2s
+}
+.option:hover{border-color:#a32a39;background:#281518}
+.option.selected{border-color:#bd2636;background:#35151a}
+.option:before{
+content:"";display:inline-block;width:7px;height:7px;
+border:1px solid #94646a;margin-left:12px
+}
+.option.selected:before{background:#c22b3b;border-color:#c22b3b}
+.actions{display:flex;justify-content:flex-end;gap:10px;margin-top:25px}
+.result{text-align:center}
+.result-number{font:800 60px Orbitron;color:#bd2636;margin:20px}
+.pass{color:var(--green)}.fail{color:#ff6675}
+footer{text-align:center;padding:30px;color:#75696b;font-size:10px}
+@media(max-width:550px){
+.container{margin:35px auto}.panel{padding:20px}
+.stats{gap:6px}.stat{padding:10px}
+.question{font-size:18px}header{padding:0 4%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">VORTEX<small>ROLEPLAY COMMUNITY</small></div>
+<div class="online">● OFFICIAL EXAM</div>
+</header>
+
+<main class="container">
+<div class="hero">
+<div class="eyebrow">VORTEX ROLEPLAY / ACADEMY</div>
+<h1>RULES <span>EXAMINATION</span></h1>
+<p>الاختبار الرسمي لقوانين مدينة VORTEX ROLEPLAY</p>
+</div>
+
+<section class="panel" id="welcome">
+<div class="label">01 / CANDIDATE SYSTEM</div>
+<h2>اختبار القوانين الرسمي</h2>
+<p class="description">
+أهلاً بك في نظام اختبارات VORTEX ROLEPLAY.
+اقرأ كل سؤال جيداً واختر الإجابة الصحيحة.
+</p>
+<div class="stats">
+<div class="stat"><b>30</b><small>عدد الأسئلة</small></div>
+<div class="stat"><b>50</b><small>الدرجة النهائية</small></div>
+<div class="stat"><b>35</b><small>درجة النجاح</small></div>
+</div>
+<button class="primary" onclick="startExam()">بدء الاختبار ←</button>
+</section>
+
+<section class="panel hidden" id="exam">
+<div class="category" id="category"></div>
+<div class="progress-info">
+<span id="number"></span>
+<span id="percent"></span>
+</div>
+<div class="progress"><div class="bar" id="bar"></div></div>
+<div class="question" id="question"></div>
+<div id="options"></div>
+<div class="actions">
+<button class="primary" id="nextBtn" onclick="next()">التالي ←</button>
+</div>
+</section>
+
+<section class="panel hidden" id="result">
+<div class="result">
+<div class="label">EXAMINATION COMPLETED</div>
+<h2 id="resultTitle"></h2>
+<div class="result-number" id="score"></div>
+<div class="description" id="message"></div>
+<button class="primary" onclick="location.reload()">إعادة الاختبار</button>
+</div>
+</section>
+</main>
+
+<footer>VORTEX ROLEPLAY © 2026 — OFFICIAL RULES</footer>
+
+<script>
+const questions=[
+["GENERAL RULES","ما المقصود بقانون RDM؟",["القتل العشوائي دون سبب رول بلاي","الدهس العشوائي","الخروج من اللعبة"],0],
+["GENERAL RULES","ما المقصود بقانون VDM؟",["استخدام معلومات خارج اللعبة","استخدام المركبة للدهس العشوائي","القتل الانتقامي"],1],
+["GENERAL RULES","ما معنى Fear RP؟",["تجاهل الخطر","تقدير الحياة والخوف على الشخصية","مغادرة السيرفر"],1],
+["GENERAL RULES","ما المقصود بـ Meta Gaming؟",["استخدام معلومات خارج اللعبة داخلها","القيادة السريعة","العمل في الشرطة"],0],
+["GENERAL RULES","ما هو Power Gaming؟",["التصرف بأفعال غير واقعية أو فرضها على الآخرين","احترام القوانين","تقديم بلاغ"],0],
+["GENERAL RULES","ما معنى Fail RP؟",["تقمص الشخصية بطريقة غير واقعية","الالتزام بالوظيفة","احترام الشرطة"],0],
+["GENERAL RULES","ما هو NLR؟",["قانون الحياة الجديدة","قانون المركبات","قانون المحكمة"],0],
+["GENERAL RULES","ما هو Combat Logging؟",["الخروج أثناء سيناريو قائم","القبض على مجرم","تقديم بلاغ"],0],
+
+["POLICE","لماذا يجب احترام التسلسل الإداري؟",["لتنظيم العمل والصلاحيات","لإلغاء القوانين","للحصول على أموال"],0],
+["POLICE","هل يجوز استغلال المنصب الشرطي لمصلحة شخصية؟",["نعم","لا","حسب الصداقة"],1],
+["POLICE","هل يجوز استخدام القوة دون مبرر؟",["نعم دائماً","لا، يجب وجود مبرر","حسب المزاج"],1],
+["POLICE","متى يجب على الشرطة الالتزام بإجراءات الاعتقال والتفتيش؟",["وفق القوانين والإجراءات المعتمدة","دون أي ضوابط","حسب رغبة الشرطي"],0],
+
+["CITIZENS","هل يجب على المواطن الالتزام بأنظمة المدينة؟",["نعم","لا","فقط عند وجود الشرطة"],0],
+["CITIZENS","ما التصرف الصحيح عند وقوع حادث؟",["تجاهل الحادث","التفاعل معه بشكل واقعي","الهروب دائماً"],1],
+["CITIZENS","هل يسمح بدهس اللاعبين عمداً؟",["نعم","لا","إذا كانت السيارة سريعة"],1],
+["CITIZENS","هل يسمح باستغلال ثغرات المدينة؟",["نعم","لا","إذا لم يلاحظ أحد"],1],
+
+["EMS","ما المهمة الأساسية للمسعفين؟",["مساعدة المصابين وتقديم الرعاية الطبية","ملاحقة المجرمين","تنفيذ السرقات"],0],
+["EMS","هل يجوز للمسعف استغلال وظيفته لمساعدة أصدقائه بشكل مخالف؟",["نعم","لا","دائماً"],1],
+["EMS","كيف يجب التعامل مع إصابة داخل سيناريو؟",["تجاهلها","احترام الحالة وتقديم الرعاية المناسبة","مغادرة المكان"],1],
+
+["CRIME","هل يجوز تسريب معلومات العصابة؟",["نعم","لا","دون علم الإدارة"],1],
+["CRIME","ما أهمية المفاوضات أثناء السرقات؟",["تنظيم السيناريو وإتاحة التفاعل","إلغاء السيناريو","تجاهل الشرطة"],0],
+["CRIME","هل يجوز استخدام معلومات من خارج اللعبة لتنفيذ عملية؟",["نعم","لا","حسب نوع العملية"],1],
+["CRIME","ما التصرف الصحيح عند تنفيذ سيناريو إجرامي؟",["احترام قوانين السيرفر والسيناريو","تجاهل جميع القوانين","إجبار الجميع على النتيجة"],0],
+
+["JUSTICE","ما المقصود بالحيادية القضائية؟",["عدم التحيز لأي طرف","مساعدة الأصدقاء","إلغاء الأدلة"],0],
+["JUSTICE","ما أهمية الأدلة والشهادات؟",["المساعدة في الوصول إلى حكم عادل","تجاهل القضية","إصدار حكم دون تحقيق"],0],
+["JUSTICE","هل يحق للمتهم الدفاع عن نفسه؟",["نعم","لا","فقط إذا كان غنياً"],0],
+
+["ADMINISTRATION","ما الهدف من التحذير والإنذار الإداري؟",["تنبيه اللاعب ومحاسبته على المخالفات","مكافأة اللاعب","إلغاء وظيفته دائماً"],0],
+["ADMINISTRATION","متى يمكن تطبيق الحظر النهائي؟",["وفق المخالفات الجسيمة وقرار الإدارة","بسبب كل خطأ بسيط","دون سبب"],0],
+
+["SCENARIO TEST","عاد لاعب للانتقام بعد خسارته سيناريو سابقاً. ما المخالفة؟",["Revenge Kill","Fear RP","VDM"],0],
+["SCENARIO TEST","شخص تحت تهديد سلاح ويتصرف وكأنه غير معرض للخطر. ما القانون؟",["Fear RP","Meta Gaming","NLR"],0]
+];
+
+let index=0;
+let answers=Array(questions.length).fill(null);
+
+function startExam(){
+document.getElementById('welcome').classList.add('hidden');
+document.getElementById('exam').classList.remove('hidden');
+showQuestion();
+}
+
+function showQuestion(){
+const q=questions[index];
+document.getElementById('category').textContent=q[0];
+document.getElementById('number').textContent=`QUESTION ${index+1} / ${questions.length}`;
+document.getElementById('percent').textContent=Math.round((index+1)/questions.length*100)+'%';
+document.getElementById('bar').style.width=((index+1)/questions.length*100)+'%';
+document.getElementById('question').textContent=q[1];
+
+const box=document.getElementById('options');
+box.innerHTML='';
+
+q[2].forEach((v,i)=>{
+const b=document.createElement('button');
+b.className='option'+(answers[index]===i?' selected':'');
+b.textContent=v;
+b.onclick=()=>{
+answers[index]=i;
+showQuestion();
+};
+box.appendChild(b);
+});
+
+document.getElementById('nextBtn').textContent=
+index===questions.length-1?'إنهاء الاختبار':'التالي ←';
+}
+
+function next(){
+if(answers[index]===null){
+alert('يرجى اختيار إجابة قبل المتابعة');
+return;
+}
+
+if(index<questions.length-1){
+index++;
+showQuestion();
+}else{
+finish();
+}
+}
+
+function finish(){
+let correct=0;
+
+questions.forEach((q,i)=>{
+if(answers[i]===q[3])correct++;
+});
+
+const percent=Math.round(correct/questions.length*100);
+const finalScore=Math.round((correct/questions.length)*50);
+
+document.getElementById('exam').classList.add('hidden');
+document.getElementById('result').classList.remove('hidden');
+
+document.getElementById('resultTitle').textContent=
+finalScore>=35?'تم اجتياز الاختبار':'لم يتم اجتياز الاختبار';
+
+document.getElementById('resultTitle').className=
+finalScore>=35?'pass':'fail';
+
+document.getElementById('score').textContent=
+finalScore+' / 50';
+
+document.getElementById('message').innerHTML=
+`الإجابات الصحيحة: ${correct} من ${questions.length}<br>
+الإجابات الخاطئة: ${questions.length-correct} من ${questions.length}<br>
+نسبة النجاح: ${percent}%<br>
+${finalScore>=35?'يمكنك مراجعة الإدارة لاستكمال إجراءات القبول.':'يرجى مراجعة القوانين والمحاولة مرة أخرى.'}`;
+}
+</script>
+</body>
+</html>
